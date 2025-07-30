@@ -17,14 +17,6 @@ Inspired by brittanychiang.com but fully customized and built from scratch with 
 │
 ├── style.css         # Global styles (includes responsive design)
 │
-├── assets/           # Static assets
-│   ├── favicon/      # Favicon icons
-│   │   ├── favicon.png
-│   │   └── favicon.ico
-│   └── icons/        # (Optional) Social icons (GitHub, LinkedIn)
-│       ├── github.svg
-│       └── linkedin.svg
-│
 └── README.md         # Project documentation
 ```
 
