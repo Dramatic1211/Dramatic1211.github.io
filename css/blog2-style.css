@@ -1,0 +1,62 @@
+.blog-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #64ffda;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-header .author,
+  .blog-header .date {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin: 0.2rem 0;
+  }
+  
+body {
+    background-color: #0a192f;
+    color: #94a3b8;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 40px 20px;
+    margin: 0;
+  }
+  
+  .article-wrapper {
+    max-width: 65ch; /* 控制最大字符数 */
+    margin: 0 auto;
+  }
+  
+  .post p {
+    margin-bottom: 1.4em;
+    text-align: justify; /* 左右对齐，让每行更整齐 */
+  }
+  
+  .post .intro {
+    font-size: 1.2em;
+    color: #cbd5e1;
+    font-weight: 500;
+  }
+  
+  .post strong {
+    color: #f8fafc;
+    font-weight: 600;
+  }
+  
+  .post a {
+    color: #64ffda;
+    border-bottom: 1px dashed #64ffda;
+    text-decoration: none;
+  }
+  
+  .reference {
+    margin-top: 2em;
+    font-style: italic;
+    color: #7dd3fc;
+  }
+  
