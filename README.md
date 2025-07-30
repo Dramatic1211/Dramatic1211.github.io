@@ -1,6 +1,6 @@
 # Dramis.github.io
 
-# Dramis cheng's Personal Website
+# Dramis Cheng's Personal Website
 
 A clean, minimalist, and tech-inspired personal website to share who I am, what I build, and what I think.
 
