@@ -45,6 +45,7 @@ Inspired by brittanychiang.com but fully customized and built from scratch with 
 - GitHub: [Dramatic1211](https://github.com/Dramatic1211)
 - WhatApp:+85246880508
 - Email: chengkunshan235@gmail.com
+- LinkedIn: KunShan Cheng
 
 ## License
 
