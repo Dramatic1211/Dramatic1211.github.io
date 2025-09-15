@@ -1,6 +1,6 @@
 # Dramatic1211's github.io
 
-# Dramis Cheng's Personal Website
+# Dramile Cheng's Personal Website
 
 A clean, minimalist, and tech-inspired personal website to share who I am, what I build, and what I think.
 
