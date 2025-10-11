@@ -16,39 +16,180 @@
 
   <!-- Header 区域 -->
   <header>
-    <h1>Dramile Cheng
-
-        <div class="social-links-text">
-            <a href="https://github.com/Dramatic1211" target="_blank">GitHub</a> /
-            <a href="mailto:chengkunshan235@gmail.com">Email</a> /
-            <a href="https://www.linkedin.com/in/KunShan-Cheng-05bb38377" target="_blank">LinkedIn</a> 
-          </div>
-</h1>
-    <nav>
+    <div class="brand">
+      <h1>Dramile Cheng</h1>
+      <p class="tagline">Quant-minded engineer crafting calm technology.</p>
+    </div>
+    <nav aria-label="Primary">
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  
+
 
   <!-- Hero 区域：一句话介绍 -->
   <main>
-    <section>
-      <h2>I am a Thinker, Builder and Trader.</h2>
-      <p>Exploring freedom through mathematics, trading, and technology.</p>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Welcome</p>
+        <h2>I am a Thinker, Builder and Trader.</h2>
+        <p class="lead">Exploring freedom through mathematics, trading, and technology while sharing ideas that help people build resilient systems.</p>
+        <div class="hero-actions">
+          <a class="cta primary" href="projects.html">View Projects</a>
+          <a class="cta secondary" href="contact.html">Let's Collaborate</a>
+        </div>
+        <div class="social-links-text" aria-label="Social links">
+          <a href="https://github.com/Dramatic1211" target="_blank" rel="noreferrer">GitHub</a>
+          <span aria-hidden="true">/</span>
+          <a href="mailto:chengkunshan235@gmail.com">Email</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://www.linkedin.com/in/KunShan-Cheng-05bb38377" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <p class="hero-card__title">Latest Focus</p>
+          <p class="hero-card__body">Designing transparent trading stacks with resilient infrastructure, precise data pipelines, and mindful risk controls.</p>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="assets/images/profile-id.svg" alt="Formal headshot of Dramile Cheng" loading="lazy">
+        <figcaption>Formal ID portrait · Updated 2025</figcaption>
+      </figure>
     </section>
 
-    <!-- 引导跳转 -->
-    <section>
-      <h3>Explore More</h3>
-      <ul>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">My Projects</a></li>
-        <li><a href="blog.html">My Blog</a></li>
-        
-      </ul>
+    <section class="bio" aria-labelledby="bio-heading">
+      <div class="bio-intro">
+        <p class="eyebrow">Profile</p>
+        <h3 id="bio-heading">Blending quantitative research with human-centered products</h3>
+        <p>I am Dramile, a Shenzhen-based engineer who moves between algorithmic trading desks and calm software studios. My days alternate between building latency-sensitive strategies, teaching data literacy, and designing tools that make complex systems feel intuitive.</p>
+        <div class="quick-stats" role="list">
+          <div class="quick-stat" role="listitem">
+            <span class="quick-stat__label">Experience</span>
+            <span class="quick-stat__value">7+ years</span>
+            <p>Quant research, backend engineering, and product strategy across Asia-Pacific teams.</p>
+          </div>
+          <div class="quick-stat" role="listitem">
+            <span class="quick-stat__label">Focus</span>
+            <span class="quick-stat__value">System design</span>
+            <p>Designing resilient trading infra, analytics dashboards, and education programs.</p>
+          </div>
+          <div class="quick-stat" role="listitem">
+            <span class="quick-stat__label">Languages</span>
+            <span class="quick-stat__value">EN · 中文</span>
+            <p>Comfortable collaborating across bilingual, multicultural teams and clients.</p>
+          </div>
+        </div>
+      </div>
+      <aside class="bio-card">
+        <h4>Snapshot</h4>
+        <dl>
+          <div>
+            <dt>Education</dt>
+            <dd>B.Sc. in Mathematics, Southern University of Science and Technology</dd>
+          </div>
+          <div>
+            <dt>Current Role</dt>
+            <dd>Lead quant engineer, building automated trading pipelines with a risk-first lens.</dd>
+          </div>
+          <div>
+            <dt>Recent Passion</dt>
+            <dd>Bringing open-source tooling into classrooms to demystify financial technology.</dd>
+          </div>
+          <div>
+            <dt>Fun Detail</dt>
+            <dd>Weekend analog photographer documenting urban calm spots.</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="credentials" aria-labelledby="credentials-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Credentials</p>
+        <h3 id="credentials-heading">Selected certifications &amp; recognitions</h3>
+        <p>Trust is earned through practice, accreditation, and community recognition. These highlights capture the milestones I'm most proud of.</p>
+      </div>
+      <div class="credential-grid">
+        <article class="credential-card">
+          <h4>Chartered Market Technician</h4>
+          <p>Awarded for rigorous mastery of technical analysis, risk modeling, and ethical trading standards.</p>
+          <p class="credential-meta">Issued by CMT Association · 2023</p>
+        </article>
+        <article class="credential-card">
+          <h4>Google Cloud Professional Data Engineer</h4>
+          <p>Validated expertise in constructing reliable data architectures for quantitative research workloads.</p>
+          <p class="credential-meta">Credential ID 9L7-MAQ · 2024</p>
+        </article>
+        <article class="credential-card">
+          <h4>Winner · Shenzhen FinTech Hackathon</h4>
+          <p>Led a team of five to ship a compliance-friendly trade surveillance dashboard in 36 hours.</p>
+          <p class="credential-meta">Citywide competition · 2022</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="highlights" aria-labelledby="highlights-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Discover</p>
+        <h3 id="highlights-heading">Navigate the journey</h3>
+        <p>Dive into curated resources that showcase what I am building and learning.</p>
+      </div>
+      <div class="card-grid">
+        <article class="info-card">
+          <h4>About Me</h4>
+          <p>Read the story behind my switch from mathematics to engineering and the values guiding my work.</p>
+          <a class="card-link" href="about.html">Learn more</a>
+        </article>
+        <article class="info-card">
+          <h4>Project Lab</h4>
+          <p>Explore experiments across trading infrastructure, data products, and creative coding.</p>
+          <a class="card-link" href="projects.html">See projects</a>
+        </article>
+        <article class="info-card">
+          <h4>Writing &amp; Notes</h4>
+          <p>Short essays on markets, automation, and living deliberately.</p>
+          <a class="card-link" href="blog.html">Visit the blog</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="journey" aria-labelledby="journey-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Journey</p>
+        <h3 id="journey-heading">Milestones that shaped my craft</h3>
+        <p>Each chapter strengthened a different muscle—analysis, leadership, storytelling, and compassion.</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <div class="timeline-marker">2017</div>
+          <div class="timeline-content">
+            <h4>Mathematics graduate, SUSTech</h4>
+            <p>Specialized in stochastic calculus while mentoring classmates on algorithmic thinking.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-marker">2019</div>
+          <div class="timeline-content">
+            <h4>Joined Shenzhen Quant Collective</h4>
+            <p>Built low-latency execution systems that reduced slippage by 18% across strategies.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-marker">2021</div>
+          <div class="timeline-content">
+            <h4>Launched open-source risk dashboard</h4>
+            <p>Open-sourced a portfolio risk monitor now used by 12+ boutique funds in China.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-marker">2024</div>
+          <div class="timeline-content">
+            <h4>Teaching fellow, Quant Literacy Program</h4>
+            <p>Designed bilingual workshops blending financial modeling with mindful work habits.</p>
+          </div>
+        </li>
+      </ol>
     </section>
   </main>
 

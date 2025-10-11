@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="760" viewBox="0 0 600 760">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <clipPath id="portrait-mask">
+      <rect x="70" y="60" width="460" height="580" rx="36" ry="36" />
+    </clipPath>
+  </defs>
+  <rect width="600" height="760" rx="42" fill="url(#bg)" />
+  <g clip-path="url(#portrait-mask)">
+    <rect x="70" y="60" width="460" height="580" fill="#0f172a" opacity="0.65" />
+    <circle cx="300" cy="270" r="110" fill="#f8fafc" />
+    <circle cx="300" cy="240" r="90" fill="#d9e2f1" />
+    <path d="M170 540c22-110 96-150 130-150h0c34 0 108 40 130 150Z" fill="#94a3b8" />
+    <path d="M170 540c16-80 74-120 130-120s114 40 130 120v80H170Z" fill="#1e293b" />
+    <rect x="70" y="500" width="460" height="160" fill="#0f172a" opacity="0.55" />
+  </g>
+  <g transform="translate(0 640)" fill="#f8fafc" font-family="'JetBrains Mono', 'Source Sans Pro', 'Microsoft YaHei', sans-serif">
+    <text x="300" y="28" font-size="36" text-anchor="middle">Dramile Cheng</text>
+    <text x="300" y="70" font-size="22" text-anchor="middle" opacity="0.75">Quantitative Engineer · Shenzhen</text>
+  </g>
+</svg>
