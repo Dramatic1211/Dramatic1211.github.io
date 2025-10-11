@@ -1,4 +1,5 @@
 :root {
+ codex/refactor-this-code-c2ofbf
   --bg: #07111f;
   --bg-muted: #0d192b;
   --card: rgba(14, 26, 44, 0.9);
@@ -341,5 +342,26 @@ main {
 
   .hero-stats {
     grid-template-columns: 1fr;
+
+  --bg-dark: #0b1021;
+  --bg-gradient: radial-gradient(circle at top left, #1d2b64, #0d1b2a 55%, #000814 95%);
+  --text-primary: #e6f1ff;
+  --text-muted: #8892b0;
+  --accent: #64ffda;
+  --accent-soft: rgba(100, 255, 218, 0.18);
+  --surface: rgba(13, 27, 42, 0.72);
+  --border: rgba(100, 255, 218, 0.24);
+  --transition: 200ms ease;
+  font-family: 'JetBrains Mono', 'Fira Sans', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+ main
   }
 }
