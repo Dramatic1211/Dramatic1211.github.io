@@ -3,59 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal Website of Dramile Cheng">
-  <title>Dramile cheng- Personal Website</title>
+  <meta name="description" content="Dramile Cheng · Thinker, builder, and trader exploring freedom through ideas.">
+  <title>Dramile Cheng · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
 </head>
-
 <body>
-
-  <!-- Header 区域 -->
-  <header>
-    <h1>Dramile Cheng
-
-        <div class="social-links-text">
-            <a href="https://github.com/Dramatic1211" target="_blank">GitHub</a> /
-            <a href="mailto:chengkunshan235@gmail.com">Email</a> /
-            <a href="https://www.linkedin.com/in/KunShan-Cheng-05bb38377" target="_blank">LinkedIn</a> 
-          </div>
-</h1>
-    <nav>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="site-mark" href="/">
+      <span class="glow-dot" aria-hidden="true"></span>
+      <span class="wordmark">Dramile Cheng</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
+      <a href="blog.html">Writing</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  
 
-  <!-- Hero 区域：一句话介绍 -->
   <main>
-    <section>
-      <h2>I am a Thinker, Builder and Trader.</h2>
-      <p>Exploring freedom through mathematics, trading, and technology.</p>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <span class="tag">Hello, I'm Dramile</span>
+          <h1 id="hero-title">Thinker, builder and trader exploring freedom through ideas.</h1>
+          <p class="lead">I design resilient systems, prototype markets, and practice disciplined iteration to translate strategy into momentum. Follow along as I document experiments, learnings, and collaborations.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">View projects</a>
+            <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+          </div>
+          <dl class="stats" aria-label="Highlights">
+            <div>
+              <dt>Focus</dt>
+              <dd>Strategy · Systems · Trading</dd>
+            </div>
+            <div>
+              <dt>Current</dt>
+              <dd>Designing adaptive research loops</dd>
+            </div>
+          </dl>
+          <div class="hero-social" aria-label="Social links">
+            <span class="label">Connect</span>
+            <a href="https://github.com/Dramatic1211" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:chengkunshan235@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/KunShan-Cheng-05bb38377" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Profile card">
+          <div class="card-glow"></div>
+          <header>
+            <span class="chip">Dramile Cheng</span>
+            <span class="badge">Verified · 2025</span>
+          </header>
+          <div class="portrait">
+            <img src="assets/images/profile-id.svg" alt="Portrait of Dramile Cheng">
+          </div>
+          <div class="card-body">
+            <p class="role">Product strategist &amp; independent trader</p>
+            <p class="location">Shenzhen · Remote</p>
+          </div>
+          <footer>
+            <span class="stamp">License No. 0927</span>
+            <span class="date">Issued Nov 09</span>
+          </footer>
+        </aside>
+      </div>
     </section>
 
-    <!-- 引导跳转 -->
-    <section>
-      <h3>Explore More</h3>
-      <ul>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">My Projects</a></li>
-        <li><a href="blog.html">My Blog</a></li>
-        
-      </ul>
+    <section class="features" aria-labelledby="features-title">
+      <div class="section-head">
+        <h2 id="features-title">Navigate the journey</h2>
+        <p>Deep dive into the stories, research, and projects that map the path from notebooks to markets.</p>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="about.html">
+          <span class="icon" aria-hidden="true">↗</span>
+          <h3>About</h3>
+          <p>Browse the principles, experiences, and values guiding every build.</p>
+        </a>
+        <a class="feature-card" href="projects.html">
+          <span class="icon" aria-hidden="true">◆</span>
+          <h3>Projects</h3>
+          <p>Explore strategic prototypes, trading systems, and product experiments.</p>
+        </a>
+        <a class="feature-card" href="blog.html">
+          <span class="icon" aria-hidden="true">✦</span>
+          <h3>Writing</h3>
+          <p>Join the research log documenting insights, notes, and field learnings.</p>
+        </a>
+        <a class="feature-card" href="contact.html">
+          <span class="icon" aria-hidden="true">✉</span>
+          <h3>Contact</h3>
+          <p>Say hello to collaborate, trade perspectives, or kick off a new build.</p>
+        </a>
+      </div>
     </section>
   </main>
 
-  <!-- Footer 区域 -->
-  <footer>
-    <p>© 2025 Dramile Cheng. All Rights Reserved.</p>
+  <footer class="site-footer">
+    <p>© 2025 Dramile Cheng. Crafted with curiosity.</p>
   </footer>
-
 </body>
 </html>
