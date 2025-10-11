@@ -136,17 +136,18 @@ main {
   gap: 8px;
   padding: 12px 28px;
   border-radius: 999px;
-  border: 1px solid rgba(58, 123, 255, 0.25);
+  border: 1px solid rgba(58, 123, 255, 0.2);
   color: var(--text);
   font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
   background: transparent;
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: linear-gradient(135deg, #81d4ff 0%, #4d7dff 100%);
+  color: #041126;
   border-color: transparent;
-  box-shadow: 0 12px 28px rgba(58, 123, 255, 0.32);
+  box-shadow: 0 12px 30px rgba(58, 123, 255, 0.35);
 }
 
 .btn:hover,
@@ -157,7 +158,8 @@ main {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: linear-gradient(135deg, #4d8dff, #3a7bff);
+  background: linear-gradient(135deg, #95dcff 0%, #5b8cff 100%);
+  color: #041126;
 }
 
 .hero-stats {
