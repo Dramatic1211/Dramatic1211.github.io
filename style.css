@@ -54,9 +54,22 @@ main {
 }
 
 .site-header .wordmark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 700;
   font-size: clamp(20px, 2.4vw, 28px);
   letter-spacing: 0.05em;
+}
+
+.site-header .wordmark::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 18px rgba(58, 123, 255, 0.65);
 }
 
 .site-header nav {
@@ -121,9 +134,9 @@ main {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 24px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(58, 123, 255, 0.25);
   color: var(--text);
   font-weight: 600;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
@@ -138,13 +151,13 @@ main {
 
 .btn:hover,
 .btn:focus {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 34px rgba(58, 123, 255, 0.22);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(58, 123, 255, 0.24);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: #4d89ff;
+  background: linear-gradient(135deg, #4d8dff, #3a7bff);
 }
 
 .hero-stats {
@@ -191,25 +204,21 @@ main {
 }
 
 .hero-id {
-  padding: 24px;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(160deg, rgba(24, 50, 92, 0.95), rgba(9, 22, 40, 0.9));
-  border: 1px solid rgba(58, 123, 255, 0.28);
-  box-shadow: 0 18px 36px rgba(6, 16, 32, 0.45);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 0;
   text-align: center;
 }
 
 .id-frame {
-  width: min(220px, 40vw);
+  width: min(210px, 42vw);
   aspect-ratio: 3 / 4;
-  border-radius: var(--radius-md);
+  border-radius: calc(var(--radius-md) - 6px);
   overflow: hidden;
-  border: 1px solid rgba(58, 123, 255, 0.35);
-  background: rgba(6, 14, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 28px rgba(5, 14, 30, 0.35);
+  background: rgba(6, 14, 28, 0.7);
 }
 
 .id-frame img {
@@ -219,11 +228,9 @@ main {
 }
 
 .id-name {
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.id-meta {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   font-size: 0.85rem;
   color: var(--text-muted);
 }
