@@ -4,58 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal Website of Dramile Cheng">
-  <title>Dramile cheng- Personal Website</title>
+  <title>Dramile Cheng · Personal Website</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-
-  <!-- Header 区域 -->
-  <header>
-    <h1>Dramile Cheng
-
-        <div class="social-links-text">
-            <a href="https://github.com/Dramatic1211" target="_blank">GitHub</a> /
-            <a href="mailto:chengkunshan235@gmail.com">Email</a> /
-            <a href="https://www.linkedin.com/in/KunShan-Cheng-05bb38377" target="_blank">LinkedIn</a> 
-          </div>
-</h1>
-    <nav>
+  <header class="site-header">
+    <div class="branding">
+      <span class="logo-dot"></span>
+      <span class="brand-name">Dramile Cheng</span>
+    </div>
+    <nav class="site-nav">
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  
 
-  <!-- Hero 区域：一句话介绍 -->
   <main>
-    <section>
-      <h2>I am a Thinker, Builder and Trader.</h2>
-      <p>Exploring freedom through mathematics, trading, and technology.</p>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I'm Dramile</p>
+        <h1>Thinker, builder and trader exploring freedom through ideas.</h1>
+        <p class="lead">I design systems, craft products, and navigate markets with curiosity. Here you'll find a snapshot of the experiments, writings, and collaborations that keep me learning.</p>
+        <div class="cta-group">
+          <a class="btn primary" href="projects.html">View Projects</a>
+          <a class="btn secondary" href="contact.html">Get in Touch</a>
+        </div>
+        <div class="hero-social">
+          <span class="label">Connect:</span>
+          <a href="https://github.com/Dramatic1211" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:chengkunshan235@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/KunShan-Cheng-05bb38377" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/images/profile-id.svg" alt="Formal portrait of Dramile Cheng">
+        </div>
+        <div class="photo-caption">Verified ID · 2025</div>
+      </div>
     </section>
 
-    <!-- 引导跳转 -->
-    <section>
-      <h3>Explore More</h3>
-      <ul>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="projects.html">My Projects</a></li>
-        <li><a href="blog.html">My Blog</a></li>
-        
-      </ul>
+    <section class="highlights">
+      <h2>Navigate the journey</h2>
+      <p class="section-intro">Dive into the stories, research notes, and products that map my path from mathematics to markets.</p>
+      <div class="highlight-grid">
+        <a class="card" href="about.html">
+          <span class="card-icon"><i class="fas fa-user"></i></span>
+          <h3>About</h3>
+          <p>Read the full biography, philosophies, and the skills I'm sharpening right now.</p>
+        </a>
+        <a class="card" href="projects.html">
+          <span class="card-icon"><i class="fas fa-flask"></i></span>
+          <h3>Projects</h3>
+          <p>Explore prototypes, market models, and tools built with curiosity and rigor.</p>
+        </a>
+        <a class="card" href="blog.html">
+          <span class="card-icon"><i class="fas fa-pen-nib"></i></span>
+          <h3>Writing</h3>
+          <p>Follow along as I reflect on experiments, share trading notes, and unpack ideas.</p>
+        </a>
+        <a class="card" href="contact.html">
+          <span class="card-icon"><i class="fas fa-comments"></i></span>
+          <h3>Contact</h3>
+          <p>Let's connect on research collaborations, product opportunities, or just say hi.</p>
+        </a>
+      </div>
     </section>
   </main>
 
-  <!-- Footer 区域 -->
   <footer>
-    <p>© 2025 Dramile Cheng. All Rights Reserved.</p>
+    <p>© 2025 Dramile Cheng. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
