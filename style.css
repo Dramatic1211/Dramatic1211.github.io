@@ -373,3 +373,68 @@ body {
  main
   }
 }
+/* 基础与容器 */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: #d9e2f1;
+  background: radial-gradient(1200px 600px at -10% -20%, #0b1e3a 0%, #0a1a30 40%, #0a1730 100%);
+}
+.container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+/* 头部与导航 */
+.site-header { position: sticky; top: 0; z-index: 40; background: rgba(10,23,48,0.75); backdrop-filter: blur(6px); }
+.main-nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.brand { font-weight: 700; color: #cfe0ff; text-decoration: none; }
+.nav-list { display: flex; gap: 28px; margin: 0; padding: 0; list-style: none; }  /* ← 去掉蓝色圆点的关键 */
+.nav-list a { color: #aebbd6; text-decoration: none; opacity: .9; }
+.nav-list a:hover { opacity: 1; }
+
+/* Hero 布局 */
+.hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 36px; margin-top: 28px; }
+.hero-card {
+  background: #243a5b;
+  border-radius: 22px;
+  padding: 36px;
+  box-shadow: 0 18px 36px rgba(8,17,30,.35);
+}
+.pill {
+  display: inline-block; padding: 6px 12px; border-radius: 999px;
+  background: rgba(94,134,255,.15); color: #9fc2ff; font-weight: 700; font-size: .85rem; letter-spacing: .05em;
+}
+.hero h1 { margin: 18px 0 12px; font-size: 3rem; line-height: 1.1; color: #eaf1ff; }
+.lead { color: #b7c4dc; max-width: 62ch; }
+
+/* CTA 按钮 */
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 18px; border-radius: 14px; font-weight: 600; text-decoration: none; }
+.btn-primary { background: linear-gradient(180deg, #4da3ff, #2863ff); color: #fff; box-shadow: 0 14px 28px rgba(40,99,255,.35); }
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-ghost { background: rgba(255,255,255,.06); color: #dbe3ff; border: 1px solid rgba(255,255,255,.14); }
+.cta-row { display: flex; gap: 12px; margin: 18px 0 12px; }
+
+/* 两个指标卡 */
+.highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+.card { background: #142843; border-radius: 14px; padding: 16px 18px; }
+.card-title { font-size: .75rem; letter-spacing: .16em; color: #8fa7cc; margin-bottom: 6px; }
+.card-body { color: #e7efff; opacity: .92; }
+
+/* 右侧证件照卡 */
+.hero-id { display: grid; place-items: start center; }
+.id-card { width: 280px; margin: 0; }
+.id-card img { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: 0 18px 28px rgba(0,0,0,.35); }
+.caption { text-align: center; margin-top: 10px; color: #9bb2d8; letter-spacing: .1em; }
+
+/* 响应式 */
+@media (max-width: 960px) {
+  main { padding-top: 48px; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-id { max-width: 260px; margin: 0 auto; }
+}
+@media (max-width: 640px) {
+  .main-nav { height: 60px; }
+  .site-header .container { flex-direction: column; gap: 14px; }
+  .hero-card { padding: 24px; }
+  .hero h1 { font-size: 2.2rem; }
+  .highlights { grid-template-columns: 1fr; }
+}
