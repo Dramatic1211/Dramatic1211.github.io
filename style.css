@@ -152,6 +152,8 @@ header {
   border: 1px solid rgba(100, 255, 218, 0.3);
   box-shadow: 0 18px 40px rgba(2, 12, 27, 0.45);
   background: linear-gradient(135deg, rgba(100, 255, 218, 0.08), rgba(17, 34, 64, 0.75));
+
+
 }
 
 .hero-photo img {
@@ -160,7 +162,6 @@ header {
   object-fit: cover;
   display: block;
 }
-
 .hero-media__hint {
   margin: 0;
   font-size: 12px;
@@ -180,6 +181,42 @@ header {
 
 .social-links-text span {
   color: rgba(136, 146, 176, 0.6);
+}
+
+.hero-spotlights {
+  margin-top: 32px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.hero-spotlight {
+  background: rgba(17, 34, 64, 0.78);
+  border-radius: 16px;
+  padding: 20px 22px;
+  border: 1px solid rgba(100, 255, 218, 0.18);
+  box-shadow: 0 12px 26px rgba(2, 12, 27, 0.42);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-spotlight:hover,
+.hero-spotlight:focus-within {
+  transform: translateY(-4px);
+  border-color: rgba(100, 255, 218, 0.4);
+}
+
+.hero-spotlight h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e6f1ff;
+}
+
+.hero-spotlight p {
+  margin: 0;
+  font-size: 14px;
+  color: #a8b2d1;
 }
 
 .section-heading {
