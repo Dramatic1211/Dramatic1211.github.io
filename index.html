@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Header 区域 -->
   <header>
@@ -22,16 +23,18 @@
       <p class="tagline">Quant-minded engineer crafting calm technology.</p>
     </div>
     <nav aria-label="Primary">
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+      <ul class="nav-list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
 
   <!-- Hero 区域：一句话介绍 -->
-  <main>
+  <main id="main-content">
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">Welcome</p>
@@ -48,10 +51,30 @@
           <span aria-hidden="true">/</span>
           <a href="https://www.linkedin.com/in/KunShan-Cheng-05bb38377" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
+        <div class="hero-spotlights" role="list">
+          <article class="hero-spotlight" role="listitem">
+            <h3>Trading Systems</h3>
+            <p>Designing latency-aware infra that keeps discretionary ideas executable.</p>
+          </article>
+          <article class="hero-spotlight" role="listitem">
+            <h3>Calm Automation</h3>
+            <p>Building assistants that reduce noise while surfacing the right signals.</p>
+          </article>
+          <article class="hero-spotlight" role="listitem">
+            <h3>Writing &amp; Sharing</h3>
+            <p>Documenting experiments on engineering, markets, and intentional living.</p>
+          </article>
+          <article class="hero-spotlight" role="listitem">
+            <h3>Life &amp; Community</h3>
+            <p>Capturing everyday moments and collaborations that keep the work grounded.</p>
+          </article>
+        </div>
       </div>
-      <div class="hero-card" aria-hidden="true">
-        <p class="hero-card__title">Latest Focus</p>
-        <p class="hero-card__body">Designing algorithmic trading strategies with risk-first thinking and transparent tooling.</p>
+      <div class="hero-media">
+        <figure class="hero-photo">
+          <img src="assets/images/profile-id.svg" alt="Dramile Cheng enjoying daily life" loading="lazy">
+        </figure>
+        <p class="hero-media__hint">Update the image source with your latest life photo.</p>
       </div>
     </section>
 
@@ -59,7 +82,7 @@
       <div class="section-heading">
         <p class="eyebrow">Discover</p>
         <h3 id="highlights-heading">Navigate the journey</h3>
-        <p>Dive into curated resources that showcase what I am building and learning.</p>
+        <p>Quick links to learn who I am, what I build, and how I write.</p>
       </div>
       <div class="card-grid">
         <article class="info-card">
