@@ -152,6 +152,9 @@ header {
   border: 1px solid rgba(100, 255, 218, 0.3);
   box-shadow: 0 18px 40px rgba(2, 12, 27, 0.45);
   background: linear-gradient(135deg, rgba(100, 255, 218, 0.08), rgba(17, 34, 64, 0.75));
+
+}
+
 }
 
 .hero-photo img {
