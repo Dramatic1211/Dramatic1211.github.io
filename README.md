@@ -10,14 +10,24 @@ Inspired by brittanychiang.com but fully customized and built from scratch with 
 
 ```
 /
-├── index.html        # Home page
-├── about.html        # About me
-├── projects.html     # Projects showcase
-├── blog.html         # Blog posts list
-│
-├── style.css         # Global styles (includes responsive design)
-│
-└── README.md         # Project documentation
+├── index.html         # Home page with hero photo + spotlight cards
+├── about.html         # About me
+├── projects.html      # Projects showcase
+├── contact.html       # Contact details
+├── blog.html          # Blog posts list
+├── blogs/             # Individual blog post pages
+│   ├── blog1.html
+│   └── blog2.html
+├── assets/
+│   └── images/
+│       └── profile-id.svg
+├── css/               # Page-specific stylesheets
+│   ├── blog.css
+│   ├── blog2-style.css
+│   ├── contact.css
+│   └── project.css
+├── style.css          # Global styles (layout, hero, spotlight grid)
+└── README.md          # Project documentation
 ```
 
 ## Features
